@@ -4,3 +4,16 @@
 
     un msg
 </div>
+<input type="text" [(ngModel)]="kolor">
+
+<input type="text" #e>
+
+<input type="submit" value="changeColor" (click)="changeColor(e.value)">
+
+<div *ngFor="let list of listResidences">
+    <span *ngIf="list.address==search ||search==''">
+{{list.id}}
+{{list.name}}
+</span>
+</div>
+<input type="text" [(ngModel)]="search">
