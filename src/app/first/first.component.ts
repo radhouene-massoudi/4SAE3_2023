@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class FirstComponent {
 klass="4SAE3";
+kolor='red'
+
+showMsg(){
+  console.log("bonjour ");
+}
 }
