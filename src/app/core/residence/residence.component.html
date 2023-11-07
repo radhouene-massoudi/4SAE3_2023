@@ -1,14 +1,16 @@
 <p>residence works!</p>
-<div *ngFor="let residence of Residences">
+<div *ngFor="let residence of Residences ;let k=index">
     {{residence.id}}
     {{residence.name}}
     {{residence.address}}
-    <input type="submit" value="show app" (click)="showApp(residence)">
-    
-</div>
-<div *ngFor="let app of Apprs;let i=index">
+<div *ngIf="k==j">
+    <div *ngFor="let app of Apprs;let i=index">
     
         {{app.id}}
         {{app.residence.address}}
    
+</div>
+</div>
+    <input type="submit" value="show app" (click)="showApp(residence)">
+    
 </div>

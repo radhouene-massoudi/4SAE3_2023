@@ -42,6 +42,7 @@ export class ResidenceComponent {
 
 
 showApp(Residence:any){
+  this.Apprs=[];
   let indexofresidence=this.Residences.indexOf(Residence);
   this.j=indexofresidence;
  
@@ -50,7 +51,8 @@ for(let i=0;i<this.listApartments.length;i++){
 
     this.Apprs.push(this.listApartments[i]);
   }
-  console.log(this.Apprs)
+  //console.log(this.Apprs)
 }
+
 }
 }
