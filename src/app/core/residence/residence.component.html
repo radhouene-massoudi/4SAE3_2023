@@ -3,14 +3,16 @@
     {{residence.id}}
     {{residence.name}}
     {{residence.address}}
-<div *ngIf="k==j">
-    <div *ngFor="let app of Apprs;let i=index">
-    
-        {{app.id}}
-        {{app.residence.address}}
-   
-</div>
-</div>
+    <div *ngIf="k==j">
+        <div *ngFor="let app of Apprs;let i=index">
+
+            {{app.id}}
+            {{app.residence.address}}
+
+        </div>
+    </div>
     <input type="submit" value="show app" (click)="showApp(residence)">
-    
+<a routerLink="/details/{{residence.id}}">detail residence routerlink</a>
+<a [routerLink]="['/details/',residence.id]">detail residence [routerLink]</a>
 </div>
+<router-outlet></router-outlet>

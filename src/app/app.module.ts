@@ -6,12 +6,26 @@ import { AppComponent } from './app.component';
 import { FirstComponent } from './first/first.component';
 import { FormsModule } from '@angular/forms';
 import { ResidenceComponent } from './core/residence/residence.component';
+import { TestComponent } from './test/test.component';
+import { NotfoundComponent } from './shared/notfound/notfound.component';
+import { LoginComponent } from './core/login/login.component';
+import { NavComponent } from './shared/nav/nav.component';
+import { FooterComponent } from './shared/footer/footer.component';
+import { DetailresidenceComponent } from './core/detailresidence/detailresidence.component';
+import { UpdateresidenceComponent } from './core/updateresidence/updateresidence.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FirstComponent,
-    ResidenceComponent
+    ResidenceComponent,
+    TestComponent,
+    NotfoundComponent,
+    LoginComponent,
+    NavComponent,
+    FooterComponent,
+    DetailresidenceComponent,
+    UpdateresidenceComponent
   ],
   imports: [
     BrowserModule,
