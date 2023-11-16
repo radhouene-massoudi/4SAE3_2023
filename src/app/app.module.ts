@@ -13,6 +13,7 @@ import { NavComponent } from './shared/nav/nav.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { DetailresidenceComponent } from './core/detailresidence/detailresidence.component';
 import { UpdateresidenceComponent } from './core/updateresidence/updateresidence.component';
+import { ApartmentsComponent } from './core/apartments/apartments.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { UpdateresidenceComponent } from './core/updateresidence/updateresidence
     NavComponent,
     FooterComponent,
     DetailresidenceComponent,
-    UpdateresidenceComponent
+    UpdateresidenceComponent,
+    ApartmentsComponent
   ],
   imports: [
     BrowserModule,

@@ -12,6 +12,9 @@
         </div>
     </div>
     <input type="submit" value="show app" (click)="showApp(residence)">
+
+    <a routerLink="/app/{{residence.id}}">detail app</a>
+<br>
 <a routerLink="/details/{{residence.id}}">detail residence routerlink</a>
 <a [routerLink]="['/details/',residence.id]">detail residence [routerLink]</a>
 </div>
