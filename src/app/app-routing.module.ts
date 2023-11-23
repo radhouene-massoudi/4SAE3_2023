@@ -7,11 +7,13 @@ import { LoginComponent } from './core/login/login.component';
 import { DetailresidenceComponent } from './core/detailresidence/detailresidence.component';
 import { UpdateresidenceComponent } from './core/updateresidence/updateresidence.component';
 import { ApartmentsComponent } from './core/apartments/apartments.component';
+import { ReactviveformComponent } from './reactviveform/reactviveform.component';
 
 const r: Routes = [
   {path:'',redirectTo:'login',pathMatch:'full'},
   {path:'details/:idt',component:DetailresidenceComponent},
   {path:'login',component:LoginComponent},
+  {path:'add',component:ReactviveformComponent},
   {path:'app/:idresidence',component:ApartmentsComponent},
   {path:'residence',component:ResidenceComponent,children:[
     {path:'update/:id',component:UpdateresidenceComponent}

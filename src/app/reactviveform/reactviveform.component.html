@@ -1,0 +1,49 @@
+<label>login</label>
+<input type="text" [formControl]="login">
+<label>pwd</label>
+<input type="text" [formControl]="password">
+<input type="submit" value="login" (click)="show()" [disabled]="login.invalid || password.invalid">
+
+<hr>
+<h1>form group</h1>
+<form [formGroup]="fg">
+    <label>cin</label>
+    <input type="text" formControlName="cin">
+<div *ngIf="fg.get('cin')?.invalid">
+pattern 
+</div>
+
+
+    <label>name</label>
+    <input type="text" formControlName="n">
+    <div *ngIf="fg.get('n')?.invalid && fg.get('n')?.dirty">
+        <div *ngIf="fg.get('n')?.errors?.['required']">
+            required
+        </div>
+        <div *ngIf="fg.get('n')?.errors?.['minlength']">
+            minlength
+        </div>
+    </div>
+    <label>surname</label>
+    <input type="text" formControlName="surname">
+    <label>email</label>
+    <input type="text" formControlName="email">
+    <input type="submit" value="save" (click)="showForm(fg.get('surname')?.pristine)" [disabled]="fg.invalid">
+</form>
+<hr>
+<h1> form builder</h1>
+
+<form [formGroup]="formb">
+    <label>cin</label>
+    <input type="text" formControlName="cin1">
+    <div *ngIf="formb.get('cin1')?.invalid">
+pattern
+    </div>
+    
+    <label>name</label>
+    <input type="text" formControlName="name1">
+    <div *ngIf="champsname?.invalid && champsname?.touched">
+        required
+            </div>
+    <input type="submit" >
+</form>
