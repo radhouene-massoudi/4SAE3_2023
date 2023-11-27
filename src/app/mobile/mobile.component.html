@@ -1,0 +1,5 @@
+<p>mobile works!</p>
+<div *ngFor="let p of listProdcut">
+
+   <app-showoneproduct [product]="p" (sendNotif)="afterreviceData($event)"></app-showoneproduct>
+</div>

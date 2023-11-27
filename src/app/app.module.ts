@@ -15,6 +15,9 @@ import { DetailresidenceComponent } from './core/detailresidence/detailresidence
 import { UpdateresidenceComponent } from './core/updateresidence/updateresidence.component';
 import { ApartmentsComponent } from './core/apartments/apartments.component';
 import { ReactviveformComponent } from './reactviveform/reactviveform.component';
+import { TvComponent } from './tv/tv.component';
+import { MobileComponent } from './mobile/mobile.component';
+import { ShowoneproductComponent } from './showoneproduct/showoneproduct.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +32,10 @@ import { ReactviveformComponent } from './reactviveform/reactviveform.component'
     DetailresidenceComponent,
     UpdateresidenceComponent,
     ApartmentsComponent,
-    ReactviveformComponent
+    ReactviveformComponent,
+    TvComponent,
+    MobileComponent,
+    ShowoneproductComponent
   ],
   imports: [
     BrowserModule,

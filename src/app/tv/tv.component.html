@@ -1,0 +1,6 @@
+<div *ngFor="let p of listProdcut">
+<app-showoneproduct #c [product]="p" (sendNotif)="afterreciveData($event)"></app-showoneproduct>
+<input type="submit" value="view child" (click)="c.showMsgChild()">
+</div>
+
+<input type="submit" value="view child" (click)="affichierMsg()">
