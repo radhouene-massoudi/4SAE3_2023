@@ -16,19 +16,21 @@ pattern
 
     <label>name</label>
     <input type="text" formControlName="n">
-    <div *ngIf="fg.get('n')?.invalid && fg.get('n')?.dirty">
+    <div *ngIf="fg.get('n')?.invalid ">
+        <app-errors [errorMsgEmpty]="'required'" [errorMsgminlength]="'minlength'"></app-errors>
         <div *ngIf="fg.get('n')?.errors?.['required']">
-            required
+            <app-errors [errorMsgEmpty]="'required'"></app-errors>
         </div>
         <div *ngIf="fg.get('n')?.errors?.['minlength']">
-            minlength
+            <app-errors [errorMsgminlength]="'minlength'"></app-errors>
+        
         </div>
     </div>
     <label>surname</label>
     <input type="text" formControlName="surname">
     <label>email</label>
     <input type="text" formControlName="email">
-    <input type="submit" value="save" (click)="showForm(fg.get('surname')?.pristine)" [disabled]="fg.invalid">
+    <input type="submit" value="save" (click)="saveAppartement()" [disabled]="fg.invalid">
 </form>
 <hr>
 <h1> form builder</h1>

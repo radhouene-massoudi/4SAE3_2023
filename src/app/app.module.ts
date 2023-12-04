@@ -18,7 +18,9 @@ import { ReactviveformComponent } from './reactviveform/reactviveform.component'
 import { TvComponent } from './tv/tv.component';
 import { MobileComponent } from './mobile/mobile.component';
 import { ShowoneproductComponent } from './showoneproduct/showoneproduct.component';
-
+import { ErrorsComponent } from './shared/errors/errors.component';
+import { ServiceComponent } from './service/service.component';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,13 +37,16 @@ import { ShowoneproductComponent } from './showoneproduct/showoneproduct.compone
     ReactviveformComponent,
     TvComponent,
     MobileComponent,
-    ShowoneproductComponent
+    ShowoneproductComponent,
+    ErrorsComponent,
+    ServiceComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

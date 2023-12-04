@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { AppartementService } from '../appartementService/appartement.service';
 
 @Component({
   selector: 'app-reactviveform',
@@ -26,7 +27,7 @@ showForm(f:any){
   console.log(f)
 }
 
-constructor(private fb: FormBuilder) { }
+constructor(private fb: FormBuilder,private service:AppartementService) { }
 formb = this.fb.group({
   cin1: ['', [Validators.pattern("[0-9]*")]],
   name1: ['',[Validators.required]],
@@ -34,6 +35,15 @@ formb = this.fb.group({
 
 get champsname(){
   return this.formb.get('name1');
+}
+
+
+saveAppartement(){
+  this.service.addAppartement(this.fg.value).subscribe(
+    ()=>{
+      alert('added')
+    }
+  )
 }
 }
 

@@ -1,0 +1,18 @@
+{
+  "appartement": [
+    {
+      "cin": "5555",
+      "n": "Placeat cillum sed ",
+      "surname": "Quas accusantium dol",
+      "email": "Consectetur@gmail.com",
+      "id": 1
+    },
+    {
+      "cin": "5555",
+      "n": "Esprit",
+      "surname": "test",
+      "email": "Consectetur@gmail.com",
+      "id": 2
+    }
+  ]
+}

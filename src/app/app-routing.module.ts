@@ -8,6 +8,7 @@ import { DetailresidenceComponent } from './core/detailresidence/detailresidence
 import { UpdateresidenceComponent } from './core/updateresidence/updateresidence.component';
 import { ApartmentsComponent } from './core/apartments/apartments.component';
 import { ReactviveformComponent } from './reactviveform/reactviveform.component';
+import { ServiceComponent } from './service/service.component';
 
 const r: Routes = [
   {path:'',redirectTo:'login',pathMatch:'full'},
@@ -19,6 +20,7 @@ const r: Routes = [
     {path:'update/:id',component:UpdateresidenceComponent}
   ]},
   {path:'test',component:TestComponent},
+  {path:'service',component:ServiceComponent},
   {path:'**',component:NotfoundComponent},
 ];
 
