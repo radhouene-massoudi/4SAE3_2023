@@ -2,12 +2,12 @@ import { Residence } from "./Residence";
 
 export class Apartment {
 id!: number;
-appartNum!: number;
-floorNum!: number;
+numap!: number;
+FloorNub!: number;
 surface!: number;
 terrace!: string;
 surfaceTerrace!: number;
-category!: string;
-description!: string;
+cat!: string;
+desc!: string;
 residence!: Residence;
 }

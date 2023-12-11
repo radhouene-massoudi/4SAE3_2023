@@ -1,17 +1,25 @@
 {
   "appartement": [
     {
-      "cin": "5555",
-      "n": "Placeat cillum sed ",
-      "surname": "Quas accusantium dol",
-      "email": "Consectetur@gmail.com",
+      "numap": 55,
+      "FloorNub": 77,
+      "surface": 55,
+      "terrace": "no",
+      "surfaceterrace": 88,
+      "cat": "S+1",
+      "desc": "Esprit",
+      "residence": "esprit",
       "id": 1
     },
     {
-      "cin": "5555",
-      "n": "Esprit",
-      "surname": "test",
-      "email": "Consectetur@gmail.com",
+      "numap": 77,
+      "FloorNub": 88,
+      "surface": 99,
+      "terrace": "yes",
+      "surfaceterrace": 99,
+      "cat": "S+3",
+      "desc": "Fuga Cillum lorem e",
+      "residence": "Fugiat totam volupta",
       "id": 2
     }
   ]

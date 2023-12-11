@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Apartment } from '../models/Apartment';
 import { Residence } from '../models/Residence';
 import { ActivatedRoute } from '@angular/router';
+import { AppartementService } from 'src/app/appartementService/appartement.service';
 
 @Component({
   selector: 'app-apartments',
@@ -11,18 +12,24 @@ import { ActivatedRoute } from '@angular/router';
 export class ApartmentsComponent {
   id:any;
   app:Apartment []=[];
-  constructor(private ac:ActivatedRoute){
+  constructor(private ac:ActivatedRoute, private s:AppartementService){
 
   }
   ngOnInit(){
+    /*
     this.id = this.ac.snapshot.params['idresidence'];
     for(let i=0;i<this.listApartments.length;i++){
 if(this.listApartments[i].residence.id==this.id){
   this.app.push(this.listApartments[i]);
 }
-    }
+    }*/
+    this.s.getAppartemets().subscribe(
+      (data)=>{
+        this.app=data;
+      }
+    );
   }
-
+/*
   Residences: Residence[] = [
     {
       "id": 1, "name": "El fel", "address": "Borj Cedria",
@@ -43,13 +50,13 @@ if(this.listApartments[i].residence.id==this.id){
   ];
   listApartments: Apartment[] = [
     {
-      "id": 1, "appartNum": 1, "floorNum": 0, "surface": 100, "terrace": "oui", "surfaceTerrace": 20, "category": "S + 1", "description": "AppartementS+ 1", "residence": this.Residences[0]
+      "id": 1, "numap": 1, "FloorNub": 0, "surface": 100, "terrace": "oui", "surfaceTerrace": 20, "cat": "S + 1", "desc": "AppartementS+ 1", "residence": this.Residences[0]
     },
     {
-      "id": 2, "appartNum": 2, "floorNum": 0, "surface": 130, "terrace": "non", "surfaceTerrace": 0, "category": "S + 2", "description": "AppartementS+ 2", "residence": this.Residences[3]
+      "id": 2, "numap": 2, "FloorNub": 0, "surface": 130, "terrace": "non", "surfaceTerrace": 0, "cat": "S + 2", "desc": "AppartementS+ 2", "residence": this.Residences[3]
     },
     {
-      "id": 3, "appartNum": 3, "floorNum": 0, "surface": 150, "terrace": "oui", "surfaceTerrace": 30, "category": "S + 3", "description": "AppartementS+ 3", "residence": this.Residences[1]
+      "id": 3, "numap": 3, "FloorNub": 0, "surface": 150, "terrace": "oui", "surfaceTerrace": 30, "cat": "S + 3", "desc": "AppartementS+ 3", "residence": this.Residences[1]
     }];
-
+*/
 }

@@ -21,6 +21,9 @@ import { ShowoneproductComponent } from './showoneproduct/showoneproduct.compone
 import { ErrorsComponent } from './shared/errors/errors.component';
 import { ServiceComponent } from './service/service.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ListappartementComponent } from './core/listappartement/listappartement.component';
+import { RemoveappartementComponent } from './core/removeappartement/removeappartement.component';
+import { UpdateAppartementComponent } from './core/update-appartement/update-appartement.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,7 +42,10 @@ import { HttpClientModule } from '@angular/common/http';
     MobileComponent,
     ShowoneproductComponent,
     ErrorsComponent,
-    ServiceComponent
+    ServiceComponent,
+    ListappartementComponent,
+    RemoveappartementComponent,
+    UpdateAppartementComponent
   ],
   imports: [
     BrowserModule,

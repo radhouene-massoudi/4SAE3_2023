@@ -10,6 +10,7 @@ import { Apartment } from '../models/Apartment';
 export class ResidenceComponent {
   j=-1;
   Apprs:Apartment[]=[];
+  /*
   Residences: Residence[] = [
     {
       "id": 1, "name": "El fel", "address": "Borj Cedria",
@@ -54,5 +55,5 @@ for(let i=0;i<this.listApartments.length;i++){
   //console.log(this.Apprs)
 }
 
-}
+}*/
 }
